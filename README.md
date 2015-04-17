@@ -1,2 +1,2 @@
-# zdan.github.io
-我的个人博客
+个人博客  
+> [zdan.me](http://zdan.me)
