@@ -12,5 +12,3 @@ github_username: zdan
 
 # Build settings
 markdown: kramdown
-redcarpet:
-  extensions: ['fenced_code_blocks']
