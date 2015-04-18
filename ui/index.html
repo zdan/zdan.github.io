@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <!-- bootstrap样式 -->
+  <link rel="stylesheet" href="../assets/js/lib/bootstrap/css/bootstrap.min.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!-- google code prettify -->
+  <link rel="stylesheet" href="../assets/js/lib/google-code-prettify/prettify.css">
+  <!-- 自定义样式 -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- 页内样式调整 -->
+  <style type="text/css">
+
+  </style>
+</head>
+
+<body>
+<div class="sidebar"><!-- style="background: #eee url(../assets/images/bg2.jpg) center center no-repeat; background-size: cover;" -->
+  <div class="sidebar-container">
+    <pre>
+      <code>function test(){ console.log('hello world'); }</code>
+    </pre>
+  </div>
+</div>
+<script language="javascript" src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<script language="javascript" src="../assets/js/lib/bootstrap/js/bootstrap.min.js"></script>
+<script language="javascript" src="../assets/js/lib/google-code-prettify/prettify.js"></script>
+<script language="javascript">
+  $(function() {
+    $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
+    window.prettyPrint && prettyPrint();
+  });
+</script>
+</body>
+</html>
