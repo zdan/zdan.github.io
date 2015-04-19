@@ -1,11 +1,18 @@
 ---
-layout: page
-title: About
+layout: about
 permalink: /about/
+sidebar_bg: /assets/images/bg12.jpeg
+title: About
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+- 周丹、1989、湖南邵阳
+- 工作：Node.js后台开发、Web前端开发（偶尔）
+- 喜欢：看电影、听歌、篮球、lol  
+- 性格：有点内向、乐天、偶尔呆萌
+- 近2年目标：**结婚、买房！！**
+  
+  
+  
+  
+- 由于比较懒，一直没有写博客，以后要开始写博客了。。。  
+- 未来总是充满冒险的味道！

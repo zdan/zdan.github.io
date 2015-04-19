@@ -1,0 +1,30 @@
+---
+layout: default
+permalink: /tag/
+sidebar_bg: /assets/images/bg6.jpg
+menu: tag
+---
+<div class="tag-box">
+  <h1>Tags</h1>
+  <div class="tag-all">
+    {% for tag in site.tags %}
+    <a href="#tag-{{ tag[0] }}">
+      <span class="label label-lg label-default">{{ tag[0] }} <sup>{{ tag[1].size }}</sup></span>
+    </a>
+    {% endfor %}
+  </div>
+  {% for tag in site.tags %}
+  <div class="tag-item" id="tag-{{ tag[0] }}" name="tag-{{ tag[0] }}">
+    <blockquote>
+      <h4>#{{ tag[0] }}</h4>
+      <ol>
+      {% for post in tag[1] %}
+        <li>
+          <a href="{{ post.url }}">{{ post.date | date: "%Y-%m-%-d" }} &NonBreakingSpace; {{ post.title }}</a>
+        </li>
+      {% endfor %}
+      </ol>
+    </blockquote>
+  </div>
+  {% endfor %}
+</div>

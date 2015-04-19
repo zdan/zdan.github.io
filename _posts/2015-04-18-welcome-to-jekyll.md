@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2015-04-17 12:21:56
+title:  "使用jekyll搭建个人博客"
+date:   2015-04-18 12:21:56
 tags: [jekyll, hello, ao]
 categories: post
 ---

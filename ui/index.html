@@ -12,33 +12,80 @@
   <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <!-- google code prettify -->
+  <!-- google code prettify样式 -->
   <link rel="stylesheet" href="../assets/js/lib/google-code-prettify/prettify.css">
   <!-- 自定义样式 -->
   <link rel="stylesheet" href="../assets/css/style.css">
-
-  <!-- 页内样式调整 -->
   <style type="text/css">
-
+    @media only screen and (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        position: relative;
+        display: block;
+      }
+    }
   </style>
 </head>
 
 <body>
-<div class="sidebar"><!-- style="background: #eee url(../assets/images/bg2.jpg) center center no-repeat; background-size: cover;" -->
-  <div class="sidebar-container">
-    <pre>
-      <code>function test(){ console.log('hello world'); }</code>
-    </pre>
+  <!-- 导航 B -->
+  <nav class="blog-nav">
+    <a href="#" class="active">首页</a>
+    <a href="#">标签</a>
+    <a href="#">关于</a>
+    <a href="/feed.xml">RSS</a>
+  </nav>
+  <!-- 导航 E -->
+  <!-- 左侧边栏 B -->
+  <div class="sidebar" style="background: #eee url(../assets/images/bg11.jpeg) center center no-repeat; background-size: cover;">
+    <div class="sidebar-container">
+      <div class="blog-me"><img src="../assets/images/me.jpeg"></div>
+      <h5>Node.js后台开发、Web前端</h5>
+      <h5>“学会享受生活，让每一天都过的更充实”</h5>
+    </div>
   </div>
-</div>
-<script language="javascript" src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
-<script language="javascript" src="../assets/js/lib/bootstrap/js/bootstrap.min.js"></script>
-<script language="javascript" src="../assets/js/lib/google-code-prettify/prettify.js"></script>
-<script language="javascript">
-  $(function() {
-    $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
-    window.prettyPrint && prettyPrint();
-  });
-</script>
+  <!-- 左侧边栏 E -->
+  <!-- 主体 B -->
+  <div class="blog-container">
+    <!-- 文章列表 B -->
+    <div class="article-list">
+      <!-- 文章 -->
+      <section class="article-item">
+        <h3><a href="">使用github搭建个人博客</a></h3>
+        <h5>2015-4-19</h5>
+        <h5><span class="label label-default">node.js</span> <span class="label label-default">github</span></h5>
+        <article>
+          <p>其中函数 <code>A</code> 就是该模块的内部成员，而命名函数表达式（Named Function Expression） <code>B</code> 则是该模块的公开成员。绝大多数情况下，单元测试只关注模块的公开成员，这是因为公开成员代表着模块的接口与功能，而内部成员则与模块的具体实现相关。对模块的内部成员进行测试，意味着测试代码需要了解模块的实现细节，导致测试代码与实现代码高度耦合，进而阻碍日后对代码的重构，这显然违背了单元测试的本意。而且实践 TDD 时，测试先于实现，更谈不上对模块的实现细节进行测试了。</p>
+        </article>
+      </section>
+      <!-- 分页 B -->
+      <nav>
+        <ul class="pager">
+          <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+          <li><a href="#">1/3</a></li>
+          <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+        </ul>
+      </nav>
+      <!-- 分页 E -->
+    </div>
+    <!-- 文章列表 E -->
+    <!-- 版权 -->
+    <div class="copy-right">
+      © zdan.me 2015
+    </div>
+  </div>
+  <!-- 主体 E -->
+  <!-- 脚本 -->
+  <script language="javascript" src="../assets/js/lib/jquery-1.11.2.min.js"></script>
+  <!--<script language="javascript" src="../assets/js/lib/bootstrap/js/bootstrap.min.js"></script>-->
+  <script language="javascript" src="../assets/js/lib/google-code-prettify/prettify.js"></script>
+  <script language="javascript">
+    $(function() {
+      $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
+      window.prettyPrint && prettyPrint();
+    });
+  </script>
 </body>
 </html>

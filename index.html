@@ -1,23 +1,35 @@
 ---
-layout: default
+layout: index
+title: Light time/轻时光, zdan.me
+menu: /
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+<!-- 文章 -->
+{% for post in paginator.posts %}
+<section class="article-item">
+  <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+  <h5>{{ post.date | date: "%b %-d, %Y" }}</h5>
+  <article>
+    {{ post.content | truncatewords: 100 }}
+  </article>
+  <h5 class="read-more"><a href="{{ post.url | prepend: site.baseurl }}">阅读原文</a></h5>
+</section>
+{% endfor %}
+<!-- 分页 B -->
+<nav>
+  <ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+      {% if paginator.previous_page == 1%}
+      <a href="/"><span aria-hidden="true">&larr;</span> Older</a>
+      {% else %}
+      <a href="/page/{{ paginator.previous_page }}"><span aria-hidden="true">&larr;</span> Older</a>
+      {% endif %}
+    </li>
+    {% endif %}
+    <li><a href="#">{{ paginator.page }}/{{ paginator.total_pages }}</a></li>
+    {% if paginator.next_page %}
+    <li class="next"><a href="/page/{{ paginator.next_page }}">Newer <span aria-hidden="true">&rarr;</span></a></li>
+    {% endif %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</nav>
+<!-- 分页 E -->
