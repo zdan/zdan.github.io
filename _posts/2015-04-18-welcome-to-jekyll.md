@@ -2,7 +2,7 @@
 layout: post
 title:  "使用jekyll搭建个人博客"
 date:   2015-04-18 12:21:56
-tags: [jekyll, hello, ao]
+tags: [jekyll]
 categories: post
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
