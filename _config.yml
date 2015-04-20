@@ -1,13 +1,13 @@
 # 基本配置
 title: Light time/轻时光
-description: Light time/轻时光,周丹的个人博客,blog,jekyll,github
+description: 周丹的技术博客，平时会分享和记录一些自己感兴趣的技术，如：node.js、web开发等。
+keywords: zdan,博客,light-time
 baseurl: ""
 url: "http://zdan.me"
 author: zdan
 
 # 联系方式
 email: iou012345@163.com
-twitter_username:
 github_username: zdan
 
 # 分页设置
@@ -24,4 +24,5 @@ copyright: © zdan.me 2015
 sidebar:
   job: Node.js、Web前端
   say: “未来总是充满冒险的味道”
-  img: /assets/images/bg11.jpeg
+  bg: http://7xi82w.com1.z0.glb.clouddn.com/imgbg11.jpeg
+  author_img: http://7xi82w.com1.z0.glb.clouddn.com/imgme.jpeg

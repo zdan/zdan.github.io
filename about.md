@@ -1,7 +1,7 @@
 ---
 layout: about
 permalink: /about/
-sidebar_bg: /assets/images/bg12.jpeg
+sidebar_bg: http://7xi82w.com1.z0.glb.clouddn.com/imgbg12.jpeg
 title: About
 ---
 

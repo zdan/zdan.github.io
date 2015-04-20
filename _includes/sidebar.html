@@ -1,6 +1,6 @@
-<div class="sidebar" style="background: #eee url({% if page.sidebar_bg %}{{ page.sidebar_bg }}{% else %}{{ site.sidebar.img }}{% endif %}) center center no-repeat; background-size: cover;">
+<div class="sidebar" style="background: #eee url({% if page.sidebar_bg %}{{ page.sidebar_bg }}{% else %}{{ site.sidebar.bg }}{% endif %}) center center no-repeat; background-size: cover;">
   <div class="sidebar-container">
-    <div class="blog-me {% if page.menu != '/' %}hidden-xs{% endif %}"><img src="/assets/images/me.jpeg"></div>
+    <div class="blog-me {% if page.menu != '/' %}hidden-xs{% endif %}"><img src="{{ site.sidebar.author_img }}"></div>
     <h5{% if page.menu != "/" %} class="hidden-xs"{% endif %}>{{ site.sidebar.job }}</h5>
     <h5>{{ site.sidebar.say }}</h5>
   </div>
