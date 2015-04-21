@@ -12,6 +12,14 @@ var paths = {
   css: ['./build/css/style.css', './assets/js/lib/google-code-prettify/prettify.css']
 };
 
+//合并压缩js
+gulp.task('js', function () {
+  gulp.src(['./assets/js/lib/jquery-1.11.2.min.js', './assets/js/lib/google-code-prettify/prettify.js'])
+    .pipe(uglify())
+    .pipe(concat('main.min.js'))
+    .pipe(gulp.dest('./assets/js/'));
+});
+
 //合并压缩css
 gulp.task('css', function () {
   gulp.src(['./assets/js/lib/bootstrap/css/bootstrap.min.css',
@@ -28,4 +36,4 @@ gulp.task('watch', function () {
 });
 
 // 定义默认任务
-gulp.task('default', ['watch', 'css']);
+gulp.task('default', ['watch', 'css', 'js']);
