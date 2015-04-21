@@ -10,11 +10,11 @@ categories: post
 就从写博客开始吧。
 
 ### 初识github pages
-最开始接触到github pages，主要是因为自己关注的一些技术牛人，都是用的github写博客；
-为了搭建这个博客，最近几天一直在折腾github pages和jekyll，关于为什么选择github pages（其实是觉得这个看上去貌似比较高大上- -！），说下它的几个优点吧：
+最开始接触到github pages，主要是因为自己关注的一些技术牛人，很多是使用github pages写博客；
+为了搭建这个博客，最近几天一直在折腾github pages和jekyll，使用github pages作为博客的几个优点：
   
-- 支持静态页面
 - 免费，不限容量
+- 支持静态页面
 - 配合jekyll，搭建起来非常方便
 - 支持个人域名映射
 
@@ -33,7 +33,7 @@ categories: post
 **设置域名解析**  
 
 通过自己购买域名的服务商进行设置，我使用的是万网的云解析，添加如下图3条解析：  
-![](http://7xi82w.com1.z0.glb.clouddn.com/blog3004F291-5CB4-45F4-BCDE-ABD30F1FE7B1.png)  
+![](http://7xi82w.com1.z0.glb.clouddn.com/blog20150421141817.jpg)  
 
 - 其中2条A记录指向：192.30.252.153和192.30.252.154  
 - CNAME记录指向：username.github.io   
