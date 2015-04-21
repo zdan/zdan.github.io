@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="zh-CN">
   {% include header.html %}
 </head>
 
@@ -16,20 +16,21 @@
 
 <!-- 主体 B -->
 <div class="blog-container">
-  <!-- 文章列表 B -->
-  <div class="article-list">
-    {{ content }}
-  </div>
-  <!-- 版权 -->
-  <div class="copy-right">
-    {{ site.copyright }}
+  <div class="blog-inner">
+    <!-- 文章列表 B -->
+    <div class="article-list">
+      {{ content }}
+    </div>
+    <!-- 版权 -->
+    <div class="copy-right">
+      {{ site.copyright }}
+    </div>
   </div>
 </div>
 <!-- 主体 E -->
 
 <!-- 脚本 -->
 {% include footer.html %}
-<script language="javascript" src="/assets/js/lib/google-code-prettify/prettify.js"></script>
 <script language="javascript">
   $(function() {
     //为代码添加样式

@@ -239,6 +239,11 @@ html, body {
   padding: 15px 4%;
 }
 
+.blog-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 /* Article样式调整 */
 
 article img {

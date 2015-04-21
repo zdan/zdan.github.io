@@ -48,7 +48,7 @@ categories: post
 所以大部分是在使用liquid的问题。  
 
 #### 分页显示文章
-备注：由于花括号与liquid语法冲突，复制代码时请将 ```{ %、{ {、% }```中的空格去掉   
+备注：由于花括号与liquid语法冲突，复制代码时请将 ```{ %、% }、{ {、} }```中的空格去掉   
   
 首先通过_config.yml文件配置分页信息：  
 
@@ -92,6 +92,3 @@ categories: post
     
 关于jekyll中各liquid标签的具体使用方法，请查看[官方文档](http://jekyllrb.com/docs/variables/)、
 [中文文档](http://jekyllcn.com/docs/variables/)  
-
-
-第一次写博客，写的不太完善，以后多多加强。。。
