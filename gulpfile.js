@@ -36,4 +36,4 @@ gulp.task('watch', function () {
 });
 
 // 定义默认任务
-gulp.task('default', ['watch', 'css', 'js']);
+gulp.task('default', ['watch', 'css']);

@@ -15,7 +15,11 @@ paginate: 5
 paginate_path: /page/:num
 
 # Markdown配置
-markdown: kramdown
+# markdown: kramdown
+
+highlighter: pygments
+markdown: redcarpet
+extensions: ["fenced_code_blocks", "tables", "highlight", "strikethrough"]
 
 # 版权
 copyright: © zdan.me 2015

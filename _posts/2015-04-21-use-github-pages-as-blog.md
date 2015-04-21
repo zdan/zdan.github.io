@@ -19,8 +19,18 @@ categories: post
 - 支持个人域名映射
 
 ### 创建github pages
-通过[github](https://github.com/new)平台创建一个repository，命名规范为：username.github.io，
+通过[github](https://github.com/new)平台创建一个repository，命名规范为：username.github.io；  
 例如：我的账号是zdan，就是zdan.github.io；username.github.io也是页面地址。  
+
+```c
+/* hello world demo */
+#include <stdio.h>
+int main(int argc, char **argv)
+{
+    printf("Hello, World!\n");
+    return 0;
+}
+```
 
 ### 设置个性域名
 为了使用自己的域名访问博客，可以通过如下设置完成：  
