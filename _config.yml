@@ -6,6 +6,9 @@ baseurl: ""
 url: "http://zdan.me"
 author: zdan
 
+# post路由
+permalink: /:categories/:year/:month/:day/:title.html
+
 # 联系方式
 email: iou012345@163.com
 github_username: zdan

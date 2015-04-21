@@ -9,12 +9,12 @@ var gulp = require('gulp'),
   rename = require('gulp-rename');
 
 var paths = {
-  css: ['./build/css/style.css', './assets/js/lib/google-code-prettify/prettify.css']
+  css: ['./build/css/style.css', './build/css/pygments-monokai.css']
 };
 
 //合并压缩js
 gulp.task('js', function () {
-  gulp.src(['./assets/js/lib/jquery-1.11.2.min.js', './assets/js/lib/google-code-prettify/prettify.js'])
+  gulp.src(['./assets/js/lib/jquery-1.11.2.min.js'])
     .pipe(uglify())
     .pipe(concat('main.min.js'))
     .pipe(gulp.dest('./assets/js/'));
@@ -23,8 +23,8 @@ gulp.task('js', function () {
 //合并压缩css
 gulp.task('css', function () {
   gulp.src(['./assets/js/lib/bootstrap/css/bootstrap.min.css',
-    './assets/js/lib/google-code-prettify/prettify.css',
-    './build/css/style.css'])
+    './build/css/style.css',
+    './build/css/pygments-monokai.css'])
     .pipe(minifyCss())
     .pipe(concat('style.min.css'))
     .pipe(gulp.dest('./assets/css/'));

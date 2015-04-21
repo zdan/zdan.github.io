@@ -108,6 +108,7 @@ html, body {
   background: #f8f8f8;
   border-radius: 5px;
 }
+
 .article-item {
   margin-bottom: 40px;
   font-weight: normal;
@@ -126,8 +127,18 @@ html, body {
 }
 
 .article-item article pre {
-  padding: 15px 0;
+  padding: 15px 10px;
   line-height: 1.5;
+  background: #333;
+  color: #dfdfdf;
+  border-color: #333;
+}
+
+article blockquote {
+  padding: 4px 15px;
+  font-size: 14px;
+  color: #999;
+  margin: 15px 0;
 }
 
 .article-item h3 {
