@@ -9,15 +9,6 @@ categories: post
 想搭建自己的博客已经很久了，但是由于太懒，想法一直没有付诸行动，为了改掉自己的拖延症习惯，也为了记录自己的技术学习生活，
 就从写博客开始吧。
 
-### 初识github pages
-最开始接触到github pages，主要是因为自己关注的一些技术牛人，很多是使用github pages写博客；
-为了搭建这个博客，最近几天一直在折腾github pages和jekyll，使用github pages作为博客的几个优点：
-  
-- 免费，不限容量
-- 支持静态页面
-- 配合jekyll，搭建起来非常方便
-- 支持个人域名映射
-
 ### 创建github pages
 通过[github](https://github.com/new)平台创建一个repository，命名规范为：```username.github.io```；  
 例如：我的账号是zdan，就是zdan.github.io；username.github.io也是页面地址。  
@@ -43,7 +34,7 @@ categories: post
 ### jekyll简介
 
 关于什么是jekyll与怎么安装jekyll，请查看[jekyll官方文档](http://jekyllrb.com/docs/home/)、[中文文档地址](http://jekyllcn.com/docs/home/)，
-以下只是记录自己适用jekyll时遇到的一些问题，
+以下只是记录自己使用jekyll时遇到的一些问题，
 由于jekyll模版使用的是[liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)语法，
 所以大部分是在使用liquid的问题。  
 
@@ -109,6 +100,7 @@ $ python
 **5. 引用css文件**  
 
 把刚才生成的css文件引入到html的```<head></head>```中，就可以实现代码的高亮了。  
+> 备注：除了pgyments，另外也可以采用js插件实现代码高亮，如：[google code prettify](https://code.google.com/p/google-code-prettify/)，只需要引用对应的样式和js文件即可。  
 
 
 #### 二、分页显示文章 
@@ -149,7 +141,7 @@ paginate_path: /page/:num #设置分页路由，:num是页码
 
 **根据标签显示标签对应的文章列表**
 
-```java
+```js
 { % for tag in site.tags % }
     //tag[0]：标签名称  
     //tag[1]：存储该标签对应的所有文章
