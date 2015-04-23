@@ -34,7 +34,7 @@ categories: post
 ### jekyll简介
 
 关于什么是jekyll与怎么安装jekyll，请查看[jekyll官方文档](http://jekyllrb.com/docs/home/)、[中文文档地址](http://jekyllcn.com/docs/home/)，
-以下只是记录自己适用jekyll时遇到的一些问题，
+以下只是记录自己使用jekyll时遇到的一些问题，
 由于jekyll模版使用的是[liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)语法，
 所以大部分是在使用liquid的问题。  
 
@@ -103,6 +103,7 @@ $ python
 **5. 引用css文件**  
 
 把刚才生成的css文件引入到html的```<head></head>```中，就可以实现代码的高亮了。  
+> 备注：除了pgyments，另外也可以采用js插件实现代码高亮，如：[google code prettify](https://code.google.com/p/google-code-prettify/)，只需要引用对应的样式和js文件即可。  
 
 
 #### 二、分页显示文章 
