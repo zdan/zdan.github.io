@@ -45,11 +45,11 @@ categories: post
 jekyll使用pgyments插件处理代码高亮，语法格式如下： 
 
 ```js
-{ % highlight javascript % }  
-  function hello(){  
-    console.log('hello world');  
-  }  
-{ % endhighlight % }  
+{ % highlight javascript % }
+function hello(){
+  console.log('hello world');
+}
+{ % endhighlight % }
 ```
 
 但是上面这种写法不便markdown阅读，jekyll也支持类似github markdown的写法：  
