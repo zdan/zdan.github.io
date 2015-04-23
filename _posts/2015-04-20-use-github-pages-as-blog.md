@@ -9,15 +9,6 @@ categories: post
 想搭建自己的博客已经很久了，但是由于太懒，想法一直没有付诸行动，为了改掉自己的拖延症习惯，也为了记录自己的技术学习生活，
 就从写博客开始吧。
 
-### 初识github pages
-最开始接触到github pages，主要是因为自己关注的一些技术牛人，很多是使用github pages写博客；
-为了搭建这个博客，最近几天一直在折腾github pages和jekyll，使用github pages作为博客的几个优点：
-  
-- 免费，不限容量
-- 支持静态页面
-- 配合jekyll，搭建起来非常方便
-- 支持个人域名映射
-
 ### 创建github pages
 通过[github](https://github.com/new)平台创建一个repository，命名规范为：```username.github.io```；  
 例如：我的账号是zdan，就是zdan.github.io；username.github.io也是页面地址。  
@@ -54,11 +45,11 @@ categories: post
 jekyll使用pgyments插件处理代码高亮，语法格式如下： 
 
 ```js
-{ % highlight javascript % }
-function hello(){
-  console.log('hello world');
-}
-{ % endhighlight % }
+{ % highlight javascript % }  
+  function hello(){  
+    console.log('hello world');  
+  }  
+{ % endhighlight % }  
 ```
 
 但是上面这种写法不便markdown阅读，jekyll也支持类似github markdown的写法：  
@@ -71,13 +62,16 @@ function hello(){
 
 **1. 安装pgyments (mac版本)**   
 
-通过pgyments官网[下载](https://pypi.python.org/pypi/Pygments)最新版本  
-解压Pygments-2.0.2.tar.gz，进入文件夹，在shell下输入```sudo python setup.py```进行安装  
-其他安装方式，请查看[pgyments官网](http://pygments.org/)。
+- 通过pgyments官网[下载](https://pypi.python.org/pypi/Pygments)最新版本  
+- 解压Pygments-2.0.2.tar.gz，进入文件夹，在shell下输入```sudo python setup.py```进行安装  
+- 其他安装方式，请查看[pgyments官网](http://pygments.org/)。 
+
 
 **2. 安装pygments.rb**  
 
-```gem install pygments.rb```
+```bash
+gem install pygments.rb
+```
 
 **3. 配置pygments**  
 
@@ -149,7 +143,7 @@ paginate_path: /page/:num #设置分页路由，:num是页码
 
 **根据标签显示标签对应的文章列表**
 
-```java
+```js
 { % for tag in site.tags % }
     //tag[0]：标签名称  
     //tag[1]：存储该标签对应的所有文章
