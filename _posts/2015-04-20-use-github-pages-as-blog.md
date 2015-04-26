@@ -89,7 +89,7 @@ extensions: ["fenced_code_blocks", "tables", "highlight", "strikethrough"] //插
 $ pygmentize -S default -f html > your/path/pygments.css
 ```
 
-default表示代码的样式名称，查看pygments所有样式，可以通过如何python命令查看： 
+default表示代码的样式名称，查看pygments所有样式，可以通过如下python命令查看： 
 
 ```bash
 $ python
