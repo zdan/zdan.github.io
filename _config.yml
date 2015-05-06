@@ -1,7 +1,7 @@
 # 基本配置
 title: Light time/轻时光
 description: 周丹的技术博客，平时会分享和记录一些自己感兴趣的技术，如：node.js、web开发等。
-keywords: zdan,博客,light-time
+keywords: zdan.me,博客,light-time
 baseurl: ""
 url: "http://zdan.me"
 author: zdan

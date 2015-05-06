@@ -9,7 +9,7 @@ menu: /
   <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
   <h5>{{ post.date | date: "%b %-d, %Y" }}</h5>
   <article class="snippet">
-    {{ post.content | truncate: 100 }}
+    {{ post.content | truncate: 80 }}
   </article>
   <h5 class="read-more"><a href="{{ post.url | prepend: site.baseurl }}">阅读原文</a></h5>
 </section>
