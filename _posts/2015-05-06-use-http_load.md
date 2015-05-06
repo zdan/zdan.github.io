@@ -34,7 +34,7 @@ $ http_load -p 100 -s 10 url.txt
 $ http_load -rate 200 -seconds 10 url.txt
 ```
 
-####返回结果解释：
+####返回结果解释
 
 ```bash
 495 fetches, 100 max parallel, 2.24393e+07 bytes, in 10.0022 seconds
