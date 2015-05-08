@@ -18,7 +18,7 @@ categories: post
 3. 在新增的List里设置Signup forms;   
 > Signup forms分为General forms、Embedded forms、Subscriber popup、Form integrations4种 
 
-4. 选择General forms，完成Signup form以后设置，会生成一个URL，如： http://eepurl.com/bml0Qr； 
+4. 选择General forms，完成Signup form设置以后会生成一个URL，如：http://eepurl.com/bml0Qr； 
 
 ```js 
 //把该地址使用A标签嵌入到网页，用户点击该链接就会跳转到邮箱订阅表单 
