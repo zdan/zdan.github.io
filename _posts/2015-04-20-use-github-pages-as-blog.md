@@ -54,11 +54,11 @@ function hello(){
 
 但是上面这种写法不便markdown阅读，jekyll也支持类似github markdown的写法：  
 
-    ```javascript  
-    function hello(){
-      console.log('hello world');
-    }
-    ```
+```javascript  
+function hello(){
+  console.log('hello world');
+}
+```
 
 **1. 安装pgyments (mac版本)**   
 
