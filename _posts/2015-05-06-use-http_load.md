@@ -8,7 +8,7 @@ categories: post
 ---
 http_load是基于linux平台的一种性能测试工具，以并行复用的方式运行，用以测试web服务器的吞吐量与负载以及web页面的性能。
 
-###安装
+### 安装
 linux 使用make install方式安装，[点击这里下载](http://acme.com/software/http_load/)，
 MacOS 可以直接使用brew安装。   
 
@@ -16,14 +16,14 @@ MacOS 可以直接使用brew安装。
 $ brew install http_load
 ```
     
-###参数解释
+### 参数解释
 **-fetches**	简写 -f ：含义是总计的访问次数  
 **-rate** 		简写 -r ：含义是每秒的访问频率  
 **-seconds**	简写 -s ：含义是总计的访问时间  
 **-parallel** 	简写 -p ：并发访问的线程数  
 **urls**		是一个url 列表，每个url 单独的一行。可以单个页面。 
  
-###示例
+### 示例
 
 ```bash    
 #测试网站每秒能承受的平均访问量
@@ -34,7 +34,7 @@ $ http_load -p 100 -s 10 url.txt
 $ http_load -rate 200 -seconds 10 url.txt
 ```
 
-####返回结果解释
+#### 返回结果解释
 
 ```bash
 495 fetches, 100 max parallel, 2.24393e+07 bytes, in 10.0022 seconds
