@@ -1,7 +1,7 @@
 # 基本配置
-title: Light time/轻时光
-description: 周丹的技术博客，平时会分享和记录一些自己感兴趣的技术，如：node.js、web开发等。
-keywords: zdan.me,博客,light-time
+title: 离子
+description: 离子的技术博客，平时会分享和记录一些自己感兴趣的技术，如：node.js开发等。
+keywords: zdan.me,博客
 baseurl: ""
 url: "http://zdan.me"
 author: zdan
@@ -10,7 +10,7 @@ author: zdan
 permalink: /:categories/:year/:month/:day/:title.html
 
 # 联系方式
-email: iou012345@163.com
+email: aW91MDEyMzQ1QDE2My5jb20=
 github_username: zdan
 
 # 分页设置
@@ -29,7 +29,7 @@ copyright: © zdan.me 2015
 
 # 侧边栏
 sidebar:
-  job: Node.js、Web前端
-  say: “未来总是充满冒险的味道”
+  job: Node.js
+  say: 兴之所向
   bg: http://7xi82w.com1.z0.glb.clouddn.com/imgbg11.jpeg
-  author_img: http://7xi82w.com1.z0.glb.clouddn.com/imgme.jpeg
+  author_img: http://7xi82w.com1.z0.glb.clouddn.com/me.jpeg
